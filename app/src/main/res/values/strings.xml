@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PracticeSendMessage</string>
+    <string name="hyperlink">Learn more about Android app development at\n<a href="https://learntodroid.com">LearnToDroid.com</a></string>
+</resources>
+

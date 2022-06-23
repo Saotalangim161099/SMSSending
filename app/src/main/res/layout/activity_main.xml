@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/skyy"
+    android:paddingLeft="@dimen/cardview_compat_inset_shadow"
+    android:paddingTop="@dimen/cardview_compat_inset_shadow"
+    android:paddingRight="@dimen/cardview_compat_inset_shadow"
+    android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Sending SMS example"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/creatorNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTV"
+        android:layout_centerHorizontal="true"
+        android:text="CREATED BY PHUC NGUYEN"
+        android:textColor="#ff87ff09"
+        android:textSize="25dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/activity_main_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSendSMS"
+        android:padding="10dp"
+        android:text="@string/hyperlink"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    // image button is a button with image, that can be pressed or clicked by the user
+    // like a regular button,
+
+    <ImageButton
+
+        android:id="@+id/imageButton"
+        android:layout_width="178dp"
+        android:layout_height="119dp"
+        android:layout_below="@id/creatorNameTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/skyy" />
+
+    <EditText
+        android:id="@+id/phoneNoET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter phone number"
+        android:phoneNumber="true"
+        android:textColorHint="@color/material_dynamic_neutral50" />
+
+    <EditText
+        android:id="@+id/smsET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNoET"
+        android:layout_alignStart="@id/phoneNoET"
+        android:layout_alignLeft="@id/phoneNoET"
+        android:layout_alignEnd="@id/imageButton"
+        android:layout_alignRight="@id/phoneNoET"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter SMS"
+        android:textColorHint="@color/material_dynamic_neutral50" />
+
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/smsET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="send sms" />
+
+
+</RelativeLayout>
